@@ -5,6 +5,11 @@
   "description": "Test Project for Gomason",
   "repository": "http://localhost:8080/generic-local/dbt-tools",
   "building": {
+    "prepcommands": [
+      "go get k8s.io/client-go/...",
+      "cd ${GOPATH}/src/k8s.io/client-go && git checkout v10.0.0",
+      "cd ${GOPATH}/src/k8s.io/client-go && godep restore ./..."
+    ],
     "targets": [
       {
         "name": "linux/amd64"
