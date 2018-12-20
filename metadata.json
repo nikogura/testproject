@@ -6,8 +6,9 @@
   "repository": "http://localhost:8080/generic-local/dbt-tools",
   "building": {
     "targets": [
-      "darwin/amd64",
-      "linux/amd64"
+      {
+        "name": "linux/amd64"
+      }
     ],
     "extras": [
       {
