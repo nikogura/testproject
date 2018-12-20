@@ -13,6 +13,9 @@
     "targets": [
       {
         "name": "linux/amd64"
+      },
+      {
+        "name": "darwin/amd64"
       }
     ],
     "extras": [
