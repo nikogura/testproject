@@ -1,0 +1,49 @@
+{
+  "name": "testproject",
+  "version": "0.1.0",
+  "package": "github.com/nikogura/testproject",
+  "description": "Test Project for Gomason",
+  "repository": "http://localhost:8080/generic-local/dbt-tools",
+  "building": {
+    "targets": [
+      "darwin/amd64",
+      "linux/amd64"
+    ],
+    "extras": [
+      {
+        "template": "templates/description.tmpl",
+        "filename": "description.txt",
+        "executable": false
+      }
+    ]
+  },
+  "signing": {
+    "program": "gpg",
+    "email": "you@yourmail.com"
+
+  },
+  "publishing": {
+    "targets": [
+      {
+        "src": "description.txt",
+        "dst": "{{.Repository}}/{{.Name}}/{{.Version}}/description.txt",
+        "sig": true,
+        "checksums": false
+      },
+      {
+        "src": "testproject_darwin_amd64",
+        "dst": "{{.Repository}}/{{.Name}}/{{.Version}}/darwin/amd64/{{.Name}}",
+        "sig": true,
+        "checksums": false
+      },
+      {
+        "src": "testproject_linux_amd64",
+        "dst": "{{.Repository}}/{{.Name}}/{{.Version}}/linux/amd64/{{.Name}}",
+        "sig": true,
+        "checksums": false
+      }
+    ],
+    "usernamefunc": "echo -n $PUBLISH_USERNAME",
+    "passwordfunc": "echo -n $PUBLISH_PASSWORD"
+  }
+}
