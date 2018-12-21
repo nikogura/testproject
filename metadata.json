@@ -35,19 +35,19 @@
         "src": "description.txt",
         "dst": "{{.Repository}}/{{.Name}}/{{.Version}}/description.txt",
         "sig": true,
-        "checksums": false
+        "checksums": true
       },
       {
         "src": "testproject_darwin_amd64",
         "dst": "{{.Repository}}/{{.Name}}/{{.Version}}/darwin/amd64/{{.Name}}",
         "sig": true,
-        "checksums": false
+        "checksums": true
       },
       {
         "src": "testproject_linux_amd64",
         "dst": "{{.Repository}}/{{.Name}}/{{.Version}}/linux/amd64/{{.Name}}",
         "sig": true,
-        "checksums": false
+        "checksums": true
       }
     ],
     "usernamefunc": "echo -n $PUBLISH_USERNAME",
