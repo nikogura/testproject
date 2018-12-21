@@ -33,12 +33,12 @@ require (
 	golang.org/x/net v0.0.0-20181217023233-e147a9138326 // indirect
 	golang.org/x/oauth2 v0.0.0-20181203162652-d668ce993890 // indirect
 	golang.org/x/sync v0.0.0-20181108010431-42b317875d0f // indirect
-	golang.org/x/sys v0.0.0-20171222143536-83801418e1b5 // indirect
+	golang.org/x/sys v0.0.0-20180909124046-d0be0721c37e // indirect
 	golang.org/x/time v0.0.0-20181108054448-85acf8d2951c // indirect
 	google.golang.org/appengine v1.4.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
-	gopkg.in/yaml.v2 v2.0.0-20171116090243-287cf08546ab // indirect
+	gopkg.in/yaml.v2 v2.2.1 // indirect
 	k8s.io/api v0.0.0-20181130031204-d04500c8c3dd
 	k8s.io/apimachinery v0.0.0-20181220065808-98853ca904e8
 	k8s.io/client-go v10.0.0+incompatible
